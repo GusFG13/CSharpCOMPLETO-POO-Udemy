@@ -1,16 +1,24 @@
-﻿namespace Section3
+﻿using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Section3
 {
-    internal class Program
+    public class Aula16
     {
-        static void Main(string[] args)
+        public static void Aula_16()
         {
             // TIPOS BÁSICOS DE DADOS EM C#
             sbyte x = 100; // tipo pré-definido C#
-            //SByte x = 100; // tipo .NET precisa incluir using System
+                           //SByte x = 100; // tipo .NET precisa incluir using System
+
             Console.WriteLine(x);
 
             byte n1 = 255; // de 0 a 255
-            //n1 = -1; //erro
+                           //n1 = -1; //erro
             Console.WriteLine(n1);
 
             int n2 = 1000;
