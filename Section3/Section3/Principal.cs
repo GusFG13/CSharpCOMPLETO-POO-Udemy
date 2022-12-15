@@ -17,7 +17,18 @@
             //Aula24.Ex4();
             //Aula24.Ex5();
             //Aula24.Ex6();
-            Aula25.Aula_25();
+            //Aula25.Aula_25();
+            //Aula26.Aula_26();
+            //Aula27.Aula_27();
+            //Aula28.Aula_28();
+            //Aula29.Ex1();
+            //Aula29.Ex2();
+            //Aula29.Ex3();
+            //Aula29.Ex4();
+            //Aula29.Ex5();
+            //Aula29.Ex6();
+            //Aula29.Ex7();
+            Aula29.Ex8();
         }
     }
 }
