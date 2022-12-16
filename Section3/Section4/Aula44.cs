@@ -28,7 +28,7 @@ namespace Section4
             Console.WriteLine("Dados do produto: " + p);
 
             Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser adicionado em estoque:");
+            Console.Write("Digite o número de produtos a ser adicionado em estoque: ");
             int qte = int.Parse(Console.ReadLine());
             p.AdicionarProdutos(qte);
 
@@ -36,7 +36,7 @@ namespace Section4
             Console.WriteLine("Dados atualizados: " + p);
 
             Console.WriteLine();
-            Console.Write("Digite o número de produtos a ser removido do estoque:");
+            Console.Write("Digite o número de produtos a ser removido do estoque: ");
             qte = int.Parse(Console.ReadLine());
             p.RemoverProdutos(qte);
 
