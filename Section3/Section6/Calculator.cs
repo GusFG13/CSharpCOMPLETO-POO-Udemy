@@ -17,5 +17,15 @@ namespace Section6
             }
             return sum;
         }
+
+        public static void Triple(ref int x)
+        {
+            x = x * 3;
+        }
+
+        public static void Triple_2(int origin,out int result)
+        {
+            result = origin * 3;
+        }
     }
 }
