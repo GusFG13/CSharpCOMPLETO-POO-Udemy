@@ -8,12 +8,29 @@ namespace Section11.Aula150
 {
     internal class Aula150
     {
-        public static void Aula_150() 
+        public static void Aula_150()
         {
-            int n1 = int.Parse(Console.ReadLine());
-            int n2 = int.Parse(Console.ReadLine());
-            int result = n1 / n2;
-            Console.WriteLine(result);
+            try
+            {
+                int n1 = int.Parse(Console.ReadLine());
+                int n2 = int.Parse(Console.ReadLine());
+                int result = n1 / n2;
+                Console.WriteLine(result);
+            }
+            catch (DivideByZeroException)
+            {
+                Console.WriteLine("Division by zero is not allowed");
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Format error! " + e.Message);
+            }
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine("Error! " + ex.Message);
+            //}
+
+
         }
     }
 }
