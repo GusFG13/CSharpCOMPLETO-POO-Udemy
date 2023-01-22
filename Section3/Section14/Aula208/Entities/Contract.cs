@@ -12,7 +12,8 @@ namespace Section14.Aula208.Entities
         public int Number { get; set; }
         public DateTime Date { get; set; }
         public double TotalValue { get; set; }
-        public Installment Instalments { get; set; }
+        //public Installment Instalments { get; set; }
+        public List<Installment> Instalments { get; set; }
 
         public Contract(int number, DateTime date, double totalValue)
         {

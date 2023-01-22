@@ -54,6 +54,13 @@ namespace Section14.Aula208
             Console.WriteLine("Installments:");
             contractService.ProcessContract(contract, numInstallments);
 
+            //Console.WriteLine(contract.Instalments);
+            foreach (Installment i in contract.Instalments)
+            {
+                Console.WriteLine(i);
+            }
+            
+
         }
 
         /*

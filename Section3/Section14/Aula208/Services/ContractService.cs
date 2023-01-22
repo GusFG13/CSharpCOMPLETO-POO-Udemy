@@ -17,15 +17,18 @@ namespace Section14.Aula208.Services
 
         public void ProcessContract(Contract contract, int months)
         {
+            List<Installment> installmentsList = new List<Installment>();
 
             double amount = contract.TotalValue / months;
             for (int i = 1; i <= months; i++)
             {
                 double interest = _onlinePaymentService.Interest(amount, i);
-                double paymentFee = _onlinePaymentService.PaymentFee(interest); 
-                contract.Instalments = new Installment(contract.Date.AddMonths(i), paymentFee);
-                Console.WriteLine(contract.Instalments);
+                double paymentFee = _onlinePaymentService.PaymentFee(interest);
+                //contract.Instalments = new Installment(contract.Date.AddMonths(i), paymentFee);
+                installmentsList.Add(new Installment(contract.Date.AddMonths(i), paymentFee));
+                //Console.WriteLine(contract.Instalments);
             }
+            contract.Instalments = installmentsList;
         }
 
         /*
